@@ -1,0 +1,15 @@
+openai
+pandas
+matplotlib
+seaborn
+pickle5
+numpy
+docstring_parser
+langchain
+colorama
+scikit-learn
+lxml
+parse
+comment-parser
+beautifulsoup4
+
