@@ -39,5 +39,28 @@ class textBot(ABC):
                                         )
         self.nodes_logs         =  None
 
+    def init_message(self):
+        """Creates a message by taking roslogs, from server, errors from execution, 
+        and function comments explaining how the code works to the LLM.
+        This is version 1 of this function later it will take these, output from GPT 
+        and generate a prompt from a smaller LLMs using the previously mentioned 
+        """
+
+        self.message = "You're an AI Agent assigned with the job of setting up a robotics simulation environment for the user to play around the test their ideas. \
+            To briefly describe the enviornment, you are given a workspace and object files, you're supposed to follow the user's instructions and create a workspace.\
+            The simulator/library used here is Drake by MIT. The link is: https://drake.mit.edu/pydrake/index.html"
+
+    def objectAddingPrompt(self, user_input : str) -> str:
+        """_summary_
+
+        Args:
+            user_input (str): _description_
+        """
+        
+                
+        
+        pass
+    
     def chatBot(self):
         pass
+    
